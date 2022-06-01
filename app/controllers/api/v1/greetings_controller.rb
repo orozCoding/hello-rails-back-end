@@ -8,6 +8,12 @@ class Api::V1::GreetingsController < ApplicationController
     render json: @greetings
   end
 
+  def random
+    @greetings = Greeting.all
+
+    render json: @greetings.sample
+  end
+
   # GET /greetings/1
   def show
     render json: @greeting
