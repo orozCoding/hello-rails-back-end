@@ -4,33 +4,36 @@
 
 This is the back-end repo for an example web-app using Reals and React in a two apps/repos.
 
-[Front-end repo.](https://github.com/orozCoding/hello-rails-back-end)
+[Front-end repo.](https://github.com/orozCoding/hello-react-front-end)
 
 
 ## Built With
-- React
-- Redux
+- Ruby on Rails
 
 ## Getting Started
 - Follow setup instructions below
 
 ### Prerequisites
 
-- React
+- Ruby
 - Git and Github
 - Terminal
 - Browser
 
 ### Setup
 
-Follow [this link](https://github.com/orozCoding/hello-rails-back-end) to visit the back-end repo and start it on localhost:3000.
+- clone the following repo `https://github.com/orozCoding/hello-rails-back-end`
+- cd into the directory and run `bundle install` to install dependencies
+- Run `rails db:create` and then `rails db:migrate`
+- Run `rails db:seed` so you can load a preset of greetings
+- Run `rails s` to start the app
+- Visit `localhost:3000` in your browser
 
-- clone the following repo `https://github.com/orozCoding/hello-react-front-end`
-- cd into the directory and run `npm install` to install dependencies
-- Run `npm start`
-- Visit `localhost:3001` in your browser
+**The backend should run in localhost:3000.**
 
-**The front-end should run in localhost:3001.**
+You can create new Greetings by running:
+- `rails console`
+- `Greeting.create(text: "your text")`
 
 # Credits
 
