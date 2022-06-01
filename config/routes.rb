@@ -13,5 +13,4 @@ Rails.application.routes.draw do
   get '/api/v1/greetings', to: 'api/v1/greetings#index'
 
   get '/api/v1/greetings/random', to: 'api/v1/greetings#random'
-
 end
