@@ -48,3 +48,5 @@ end
 
 gem 'ffi'
 
+gem 'rack-cors'
+
